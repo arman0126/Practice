@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: work sans;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color:rgb(24, 3, 3); */
+    display: flex;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgba(255, 89, 0, 0.441); */
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+#left h1{
+    font-size: 100px;
+    line-height: 103px;
+    font-weight: 400;
+    
+}
+#bottom-left{
+    /* background-color: yellow; */
+    
+    
+}
+#color{
+   /* background-color: aqua; */
+   margin-top: 45px;
+   width: fit-content;
+   padding: 8px 15px;
+   display: flex;
+   border-radius: 50px;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #000;
+
+}
+#color  h5{
+    margin-right: 20px;
+    font-weight: 500;
+}
+#color1{
+    width: 20px;
+    height: 20px;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+#color2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: brown;
+}
+#left h2{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#left p{
+    font-size: 14px;
+    width: 60%;
+    color: #333;
+    line-height: 16px;
+}
+#right{
+    /* margin-top: 10px; */
+    height: 100%;
+    width:33%;
+    /* background-color:pink; */
+    position: relative;
+    
+}
+#right-top{
+    /* height: 50px; */
+    height: 124px;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+#right-top h4{
+    margin-top:60px ;
+    font-size: 17px;
+    font-weight: 500;
+}
+#right-top h5{
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 13px ;
+}
+#right-top h5 i{
+    color: gold;
+}
+#right img{
+   width: 100%;
+   height: 84.2%;
+   object-fit: cover;
+   vertical-align: bottom;
+   line-height: 0;
+}
+#black-gola{
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    background-color: rgb(26, 26, 26);
+    color: wheat;
+    border-radius: 50%;
+    right: -25%;
+    top: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#black-gola h5{
+    font-size: 25px;
+    font-weight: 500;
+}
+#rotated{
+    position: absolute;
+    left: -57px;
+    bottom: -5px;
+    /* background-color: chocolate; */
+    rotate: -90deg;
+    transform-origin: 0 0 ;
+    font-size: 30px;
+    font-weight: 600;
+
+}
