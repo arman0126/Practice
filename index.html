@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arman's Web Landing Projects</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            color: #222;
+        }
+
+        .main {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* LEFT FIXED SIDE */
+        .left {
+            width: 40%;
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+        }
+
+        .left img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .info h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            color: #ccc;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        /* RIGHT CONTENT */
+        .right {
+            width: 60%;
+            margin-left: 40%;
+            padding: 40px;
+            height: 100vh;
+            overflow-y: auto;
+
+            /* HIDE SCROLLBAR */
+            scrollbar-width: none;
+        }
+
+        .right::-webkit-scrollbar {
+            display: none;
+        }
+
+        .project {
+            background: white;
+            padding: 18px;
+            margin-bottom: 14px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .level-title {
+            background: #222;
+            color: #eee;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .project h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .project a {
+            padding: 8px 15px;
+            background: #111;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .project a:hover {
+            background: #444;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .left {
+                width: 100%;
+                position: relative;
+                height: auto;
+            }
+
+            .right {
+                width: 100%;
+                margin-left: 0;
+                height: auto;
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png" alt="Landing Image">
+
+        <div class="info">
+            <h1>Arman's Web Landing Pages</h1>
+            <p>A collection of my UI/UX landing page designs built using HTML, CSS & JS.</p>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <div class="project level-title">
+            <h3>Simple Level</h3>
+        </div>
+
+        <div class="project">
+            <h3>Basic Landing Page</h3>
+            <a href="./Landing1/">Open</a>
+        </div>
+
+        <div class="project">
+            <h3>Food Delivery Landing</h3>
+            <a href="./FoodLanding/">Open</a>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Landing Page</h3>
+            <a href="./PortfolioLanding/">Open</a>
+        </div>
+
+        <div class="project level-title">
+            <h3>Medium Level</h3>
+        </div>
+
+        <div class="project">
+            <h3>Travel Website Landing</h3>
+            <a href="./TravelLanding/">Open</a>
+        </div>
+
+        <div class="project">
+            <h3>E-commerce Product Page</h3>
+            <a href="./EcommerceLanding/">Open</a>
+        </div>
+
+        <div class="project level-title">
+            <h3>Advanced Level</h3>
+        </div>
+
+        <div class="project">
+            <h3>Animated SaaS Landing Page</h3>
+            <a href="./SaaSLanding/">Open</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
